@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  color: #fff;
+  background: #6E6E6E;
+  font-family: 'Satoshi', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content {
+  flex-grow: 1;
+}
+
+.container {
+  background: #fff;
+  color: #000;
+}
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #1b1b1b, #000);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #BAFF39, #BAFF39);
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #BAFF39, #BAFF39);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(to bottom, #BAFF39, #6E6E6E);
+}
+
+/* Firefox Scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #BAFF39 #1b1b1b;
+}
+
+html::-moz-scrollbar {
+  width: 10px;
+}
+
+html::-moz-scrollbar-track {
+  background: linear-gradient(to bottom, #1b1b1b, #000);
+}
+
+html::-moz-scrollbar-thumb {
+  background: linear-gradient(to bottom, #a0dc31, #BAFF39);
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+html::-moz-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #a0dc31, #BAFF39);
+}
+
+html::-moz-scrollbar-thumb:active {
+  background: linear-gradient(to bottom, #a0dc31, #ff8888);
+}
+
+
+
+.footer {
+  background-color: #6E6E6E;
+  border-top: solid 2px #BAFF39;
+  margin-top: 5%;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text span {
+  font-size: 14px;
+  text-align: left !important;
+}
+
+.footer-icon {
+  margin-left: 10px;
+}
+
+.footer-icon a {
+  color: white;
+}
+
+.footer-icon a:hover {
+  color: #BAFF39;
+  transition: 0.3s;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent !important;
+}
+
+
+.btn {
+  color: #BAFF39;
+  background-color: #000;
+}
